@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Alert from 'react-bootstrap/Alert';
 import Badge from 'react-bootstrap/Badge';
 
-const KhanhHoang = () => {
+const Example2 = () => {
     const [first,setFirst] = useState(0);
     const [second,setSecond] = useState(0);
     const [third,setThird] = useState(0);
@@ -30,7 +30,7 @@ const KhanhHoang = () => {
 
         if(first === second || second === third || first === third)
         {
-            setError("Data is invalid. Must not equal");
+            setError("Data is invalid. Must be identical");
             return false;
         }
         return true;
@@ -59,19 +59,19 @@ const KhanhHoang = () => {
 
     return (
         <>
-        <h5>Find the biggest number.</h5>
+        <h5>Find the biggest number between 3 numbers.</h5>
         <Form onSubmit={onSubmit}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                 <Form.Label>Enter first number:</Form.Label>
                 <Form.Control type="number" placeholder="0" onChange={e => setFirst(e.target.value)} />
             </Form.Group>
             {error1 && (<Alert key="danger" variant="danger">{error1}</Alert>)}
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput2">
                 <Form.Label>Enter second number:</Form.Label>
                 <Form.Control type="number" placeholder="0" onChange={e => setSecond(e.target.value)} />
             </Form.Group>
             {error2 && (<Alert key="danger" variant="danger">{error2}</Alert>)}
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput3">
                 <Form.Label>Enter third number:</Form.Label>
                 <Form.Control type="number" placeholder="0" onChange={e => setThird(e.target.value)} />
             </Form.Group>
@@ -86,4 +86,4 @@ const KhanhHoang = () => {
     )
 };
 
-export default KhanhHoang;
+export default Example2;

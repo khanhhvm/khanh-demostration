@@ -282,7 +282,7 @@ p5.rect(600, 320, 20, 40);
   p5.line(680,260,710,290);
 
   // eyes surprise
-  if(stage == 11)
+  if(stage === 11)
     {
         yeyes = yeyes + eyesmove; 
         if(yeyes > 163 || yeyes < 157) eyesmove = eyesmove * -1;

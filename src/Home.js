@@ -16,16 +16,17 @@ class Layout extends React.Component {
     render() {
         return (
           <>
-            <Navbar bg="primary" variant="dark">
+            <Navbar bg="primary" variant="dark" sticky="top" expand="lg">
               <Container>
-                <Navbar.Brand href="#">Demo</Navbar.Brand>
-                <Nav className="me-auto">
-                  <Nav.Link href="user">Retrieve Data from API</Nav.Link>
-                  <Nav.Link href="input">Examinate the input value</Nav.Link>
-                  <Nav.Link href="video">Video</Nav.Link>
-                  <Nav.Link href="animation">P5.js Animation</Nav.Link>
-                  <Nav.Link href="vrwebgl">VR with WebGL</Nav.Link>
-                </Nav>
+                <Navbar.Brand href="/">About me</Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                  <Nav className="me-auto">
+                    <Nav.Link href="edu" eventKey="link-1">Education</Nav.Link>
+                    <Nav.Link href="user" eventKey="link-2">Demostration</Nav.Link>
+                    <Nav.Link href="video" eventKey="link-3">Video</Nav.Link>
+                  </Nav>
+                </Navbar.Collapse>
               </Container>
             </Navbar>
             <Container className="p-3">
