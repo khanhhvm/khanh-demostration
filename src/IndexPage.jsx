@@ -25,8 +25,20 @@ const Index = () => {
     }
   }, []);
   useEffect(() => {
-    ScrollTrigger.refresh();
-    
+      const handleLoad = () => {
+          ScrollTrigger.refresh();
+      };
+
+      window.addEventListener('load', handleLoad);
+
+      if (typeof window !== 'undefined') {
+        // Initialize GSAP and ScrollTrigger here
+        ScrollTrigger.refresh();
+    }
+
+      return () => {
+          window.removeEventListener('load', handleLoad);
+      };
   }, []);
         return (
         <>
