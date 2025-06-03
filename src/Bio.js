@@ -9,7 +9,7 @@ class Test extends React.Component {
     render() {
         return (
         <div>
-            <div class="container d-flex align-items-center flex-column mt-3">
+            <div class="container d-flex align-items-center flex-column pt-3">
                 <div style={{width:200}}>
                     <Image thumbnail roundedCircle src={avatar} fluid />
                 </div>

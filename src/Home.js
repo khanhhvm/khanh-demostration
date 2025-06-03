@@ -16,17 +16,18 @@ class Layout extends React.Component {
     render() {
         return (
           <>
-            <Navbar bg="primary" variant="dark" sticky="top" expand="lg">
+            <Navbar bg="primary" variant="dark" sticky="top" expand="lg" className="navigation">
               <Container>
                 <Navbar.Brand href="/">About me</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
+                {/*<Navbar.Collapse id="responsive-navbar-nav">
                   <Nav className="me-auto">
                     <Nav.Link href="edu" eventKey="link-1">Education</Nav.Link>
                     <Nav.Link href="user" eventKey="link-2">Demostration</Nav.Link>
                     <Nav.Link href="video" eventKey="link-3">Video</Nav.Link>
                   </Nav>
                 </Navbar.Collapse>
+                */}
               </Container>
             </Navbar>
             <Container className="p-3">
