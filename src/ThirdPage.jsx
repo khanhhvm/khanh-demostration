@@ -39,8 +39,11 @@ Init ScrollSmoother
             marginBottom: -15,
             stagger: .5,
         }, '<');
-
-   },{ scope: wrapperRef });
+        // Refresh ScrollTrigger after a delay to avoid layout shifts
+        setTimeout(() => {
+            ScrollTrigger.refresh();
+        }, 100);
+    },{ scope: wrapperRef });
 
     return (
     <>
