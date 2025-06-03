@@ -21,12 +21,11 @@ Init ScrollSmoother
         const tl = gsap.timeline({
         scrollTrigger: {
             trigger: '.accordions',
-            pin: true,
+            pin: ".accordions",
             start: 'top 20%',
             end: 'bottom top',
             scrub: 1,
             ease: 'linear',
-            invalidateOnRefresh: true, // Recalculate on window resize
             }
         })
 
