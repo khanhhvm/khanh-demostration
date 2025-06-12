@@ -83,8 +83,8 @@ Init ScrollSmoother
                     <div className="accordion">
                         <div className="thirdPageTitle">Contact Me</div>
                         <div className="thirdPageText">
-                        <p>Email: <a className="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="mailto:khanhhvm@gmail.com">mailto:khanhhvm@gmail.com</a></p>
-                        <p>LinkedIn: <a className="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.linkedin.com/in/khanh-hoang/">https://www.linkedin.com/in/khanh-hoang/</a></p>
+                        <p>Email: <a className="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="mailto:khanhhvm@gmail.com">khanhhvm@gmail.com</a></p>
+                        <p>LinkedIn: <a className="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.linkedin.com/in/khanh-hoang/" target="_blank">https://www.linkedin.com/in/khanh-hoang/</a></p>
                         </div>
                     </div>
                 </div>
