@@ -83,7 +83,7 @@ const FirstPage = () => {
               >
                 <h1 className="text-3xl font-bold space-y-4 intro-title">
                   <div className="line">
-                    {["Good", "morning,"].map((word, index) => (
+                    {["H", "e","l","l","o"].map((word, index) => (
                       <span key={index} className="word text-gradient">
                         {word}&nbsp;
                       </span>

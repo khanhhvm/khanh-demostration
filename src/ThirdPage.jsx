@@ -15,8 +15,6 @@ Init ScrollSmoother
 
   useGSAP(
     () => {
-        // GSAP animation with ScrollTrigger
-        gsap.defaults({overwrite: 'auto', duration: 1});
 
         const tl = gsap.timeline({
         scrollTrigger: {
@@ -42,7 +40,7 @@ Init ScrollSmoother
         // Refresh ScrollTrigger after a delay to avoid layout shifts
         setTimeout(() => {
             ScrollTrigger.refresh();
-        }, 100);
+        }, 300);
     },{ scope: wrapperRef });
 
     return (

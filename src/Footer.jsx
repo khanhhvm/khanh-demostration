@@ -16,7 +16,7 @@ const Footer = () => {
                     </a>
                 </li> 
                 <li className="ms-3">
-                    <a className="text-body-secondary me-5" href="https://www.linkedin.com/in/khanh-hoang/" aria-label="LinkedIn">
+                    <a className="text-body-secondary me-5" href="https://www.linkedin.com/in/khanh-hoang/" target="_blank" aria-label="LinkedIn">
                         <i className="bi bi-linkedin h4"></i>
                     </a>
                 </li> 
